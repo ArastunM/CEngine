@@ -43,18 +43,23 @@ The Command Line Interface is built-in to the engine and provides
 move sequence suggestions per given Checkers board position.
 
 As mentioned above, run the Checkers_Engine.exe and enter the input requests
-- *Enter Board Position (PDN):* xxxx/xxxx/xxxx/4444/4444/XXXX/XXXX/XXXX
-- *Enter Analysis Depth (1-7):* 4
-- *Enter Player's Turn (0 - White, 1 - Black):* 0
-- *Enter Number of Evaluations*: 5
-- *What is PDN?*
+<p> <img src="demo/CLI_input_example.PNG"></img> </p>
 
-The engine will then process the input, output the visualization of
+- [*What is PDN?*](https://github.com/ArastunM/Checkers/blob/main/PDN_Specification.pdf)
+
+
+The engine will then process the input, output the [visualization](demo/CLI_all.PNG) of
 given board position and suggest requested amount of top move sequences.
 
 
 ## About The Engine
 ### *Understanding Move Suggestions*
+A given move sequence suggestion consists of the player making the move,
+coordinates the piece moves from and the coordinates it moves to.
+
+For example; *{White; [5][1] -> [4][1]}* is a move
+by White pieces from [5][1] to [4][1]. For board coordinates
+refer to [labeled board](images/labeled_board.png).
 
 ### *Work Process*
 The program makes use of a move tree structure and builds all potential game
@@ -65,6 +70,7 @@ path from one node to another becomes a move sequence.
 After the move tree is built, the program collects all leafs of that tree, determines the
 leaf node with best evaluation for given player (or top best evaluations) and outputs the
 path to node(s).
+<p> <img src="images/simulation process.png"></img> </p>
 
 ### *Used Files*
 The program primarily operates based on files given below:
