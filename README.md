@@ -14,7 +14,7 @@ for build automation.
 
 
 ## Getting Started
-To run the engine download and run the Checkers_Engine.exe.
+To run the engine download and run the [Checkers_Engine.exe](cmake-build-debug/Checkers_Engine.exe).
 
 You can also compile and run the program from source code by
 downloading the source files and ensuring the below directory:
@@ -42,7 +42,7 @@ downloading the source files and ensuring the below directory:
 The Command Line Interface is built-in to the engine and provides 
 move sequence suggestions per given Checkers board position.
 
-As mentioned above, run the Checkers_Engine.exe and enter the input requests
+As mentioned above, run the [engine](cmake-build-debug/Checkers_Engine.exe) and enter the input requests.
 <p> <img src="demo/CLI_input_example.PNG"></img> </p>
 
 - [*What is PDN?*](https://github.com/ArastunM/Checkers/blob/main/PDN_Specification.pdf)
