@@ -3,8 +3,8 @@ CEngine is a basic Checkers engine created using the base C language.
 The source code contains game logics, move simulation, board evaluation 
 as well as the main engine constructing and selecting the top move sequences.
 
-Engine itself supports CLI for game move suggestions per board position 
-and it can also be accessed through Checkers app for GUI.
+Engine itself supports CLI for game move suggestions per board position, but it 
+can also be accessed through [Checkers app](https://github.com/ArastunM/Checkers) for GUI.
 
 
 ## Prerequisites
