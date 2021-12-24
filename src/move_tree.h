@@ -137,4 +137,16 @@ void print_path(move_tree * root, move_option move, int eval) {
     }
 }
 
+/**
+ * @return string move coordinates starting the path to given values (move, eval)
+ */
+char * get_path_start(move_tree * branch, move_option move, int eval) {
+    if (has_path(branch->first_child, move, eval)) {
+        char * output = (char*)malloc(10 * sizeof(char));
+        sprintf(output, "%s -> %s", get_coord_desc(branch->move.from_coord),
+                                            get_coord_desc(branch->move.to_coord));
+        return output;
+    } else get_path_start(branch->next_sibling, move, eval);
+}
+
 #endif //CHECKERS_ENGINE_MOVE_TREE_H
